@@ -6,12 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Memoire {
+public class PresidentJury {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private String description;
+    private String name;
+    private String email;
 
     // Getters and setters
     public Long getId() {
@@ -20,16 +20,17 @@ public class Memoire {
     public void setId(Long id) {
         this.id = id;
     }
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getDescription() {
-        return description;
+    public String getEmail() {
+        return email;
     }
-    public void setDescription(String description) {
-        this.description = description;
+    public void setEmail(String email) {
+        this.email = email;
     }
+
 }

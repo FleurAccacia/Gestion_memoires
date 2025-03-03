@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Memoire {
+public class FicheDeStage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -32,4 +32,5 @@ public class Memoire {
     public void setDescription(String description) {
         this.description = description;
     }
+
 }
